@@ -1,4 +1,4 @@
-/* 공통 스타일 */
+/* Common */
 * {
   margin: 0;
   padding: 0;
@@ -59,7 +59,7 @@ body {
   position: relative;
 }
 
-/* 슬라이드 내부 스타일 */
+/* Slide */
 .swiper-slide {
   position: relative;
   display: flex;
@@ -176,7 +176,7 @@ body {
 .footer-inner {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 60px 0;
+  padding: 60px 15px;
 }
 .footer-logo img {
   height: 40px;

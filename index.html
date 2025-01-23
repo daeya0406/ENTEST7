@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ENTEST7</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="header-inner">
+      <div class="logo">
+        <!-- 로고 이미지 -->
+        <img src="img/logo.svg" alt="로고" />
+      </div>
+      <nav class="nav">
+        <ul>
+          <li><a href="#intro">Home</a></li>
+          <li><a href="#custom">About</a></li>
+          <li><a href="#footer">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Intro -->
+  <section id="intro" class="intro">
+    <section class="swiper-container">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="img/main.jpg" alt="슬라이드 이미지1" />
+          <div class="slide-text">
+            <h2>Lorem ipsum<br/>dolor sit amet,</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <img src="img/img1.jpg" alt="슬라이드 이미지2" />
+          <div class="slide-text">
+            <h2>Lorem ipsum<br/>dolor sit amet,</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </section>
+  </section>
+
+  <!-- Card -->
+  <section id="card" class="card-section">
+    <div class="card-container">
+      <div class="card">
+        <img src="img/img1.jpg" alt="card1" />
+        <div class="card-text">
+          <h3>Lorem ipsum<br/>dolor sit amet,</h3>
+          <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit,</h4>
+          <p>Lorem ipsum dolor sit amet,</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="img/img2.jpg" alt="card2" />
+        <div class="card-text">
+          <h3>Lorem ipsum<br/>dolor sit amet,</h3>
+          <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit,</h4>
+          <p>Lorem ipsum dolor sit amet,</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="img/img3.jpg" alt="card3" />
+        <div class="card-text">
+          <h3>Lorem ipsum<br/>dolor sit amet,</h3>
+          <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit,</h4>
+          <p>Lorem ipsum dolor sit amet,</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="img/img4.jpg" alt="card4" />
+        <div class="card-text">
+          <h3>Lorem ipsum<br/>dolor sit amet,</h3>
+          <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit,</h4>
+          <p>Lorem ipsum dolor sit amet,</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Custom (새로운 섹션 - Tailwind 활용) -->
+<section id="custom" class="custom-section bg-gray-100 py-16">
+    <div class="max-w-screen-xl mx-auto px-4">
+      <!-- 섹션 제목 -->
+      <h2 class="text-3xl font-bold mb-8 text-center">Custom Section</h2>
+  
+      <!-- 간단 안내문 -->
+      <p class="text-center mb-12 text-gray-700 leading-relaxed">
+        Tailwind CSS를 이용한 Custom Section입니다.
+      </p>
+  
+      <!-- 예시: 3컬럼 카드 레이아웃 (Grid) -->
+      <div class="grid md:grid-cols-3 gap-8">
+        <!-- Card 1 -->
+        <div class="bg-white p-6 rounded shadow">
+          <h3 class="text-xl font-semibold mb-2">Card 1</h3>
+          <p class="mb-4 text-gray-600">Card 1 내용 설명 등...</p>
+          <button class="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600">
+            자세히보기
+          </button>
+        </div>
+        <!-- Card 2 -->
+        <div class="bg-white p-6 rounded shadow">
+          <h3 class="text-xl font-semibold mb-2">Card 2</h3>
+          <p class="mb-4 text-gray-600">Card 2 내용 설명 등...</p>
+          <button class="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600">
+            자세히보기
+          </button>
+        </div>
+        <!-- Card 3 -->
+        <div class="bg-white p-6 rounded shadow">
+          <h3 class="text-xl font-semibold mb-2">Card 3</h3>
+          <p class="mb-4 text-gray-600">Card 3 내용 설명 등...</p>
+          <button class="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600">
+            자세히보기
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer id="footer" class="footer">
+    <div class="footer-inner">
+      <!-- 왼쪽 로고 영역 -->
+      <div class="footer-logo">
+        <!-- 예시: 흰색 로고 svg 사용 -->
+        <img src="img/logo-w.png" alt="ENMEDIA 로고" />
+      </div>
+      <!-- 오른쪽 저작권 문구 -->
+      <div class="footer-text">
+        <p>Copyrights 2025. 테스트(김정대) All Rights Reserved</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
